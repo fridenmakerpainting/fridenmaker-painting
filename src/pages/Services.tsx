@@ -106,18 +106,18 @@ const Services = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-navy">
+      <section className="relative py-20 md:py-32 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-gold font-medium tracking-wider text-sm mb-4 uppercase">
+            <p className="text-tan font-medium tracking-wider text-sm mb-4 uppercase">
               What We Offer
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-lavender-light leading-tight mb-6">
               Comprehensive
               <br />
-              <span className="text-gold">Painting Services</span>
+              <span className="text-tan">Painting Services</span>
             </h1>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-lavender-light/80 text-lg md:text-xl leading-relaxed">
               From complete home transformations to precise detail work, we bring
               four generations of expertise to every project.
             </p>
@@ -129,16 +129,16 @@ const Services = () => {
       <section className="bg-charcoal py-8">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <div className="flex items-center gap-3 text-cream/80">
-              <Shield size={20} className="text-gold" />
+            <div className="flex items-center gap-3 text-lavender-light/80">
+              <Shield size={20} className="text-tan" />
               <span className="text-sm">5-Year Warranty</span>
             </div>
-            <div className="flex items-center gap-3 text-cream/80">
-              <Clock size={20} className="text-gold" />
+            <div className="flex items-center gap-3 text-lavender-light/80">
+              <Clock size={20} className="text-tan" />
               <span className="text-sm">On-Time Completion</span>
             </div>
-            <div className="flex items-center gap-3 text-cream/80">
-              <CheckCircle size={20} className="text-gold" />
+            <div className="flex items-center gap-3 text-lavender-light/80">
+              <CheckCircle size={20} className="text-tan" />
               <span className="text-sm">Detailed Proposals</span>
             </div>
           </div>
@@ -158,8 +158,8 @@ const Services = () => {
               >
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="flex items-center gap-3 mb-4">
-                    <service.icon className="text-gold" size={28} />
-                    <h2 className="text-2xl md:text-3xl font-serif font-semibold text-navy">
+                    <service.icon className="text-tan" size={28} />
+                    <h2 className="text-2xl md:text-3xl font-serif font-semibold text-sage-dark">
                       {service.title}
                     </h2>
                   </div>
@@ -176,7 +176,7 @@ const Services = () => {
                   </ul>
                   <Link
                     to="/contact"
-                    className="inline-flex items-center text-navy font-medium hover:text-gold transition-colors"
+                    className="inline-flex items-center text-sage-dark font-medium hover:text-tan transition-colors"
                   >
                     Request a Quote
                     <ArrowRight className="ml-2" size={18} />
@@ -199,7 +199,7 @@ const Services = () => {
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Specialty Services
             </h2>
             <p className="text-warm-gray">
@@ -213,7 +213,7 @@ const Services = () => {
                 key={index}
                 className="bg-cream p-8 border border-charcoal/10"
               >
-                <h3 className="text-xl font-semibold text-navy mb-3">
+                <h3 className="text-xl font-semibold text-sage-dark mb-3">
                   {service.title}
                 </h3>
                 <p className="text-warm-gray leading-relaxed">
@@ -229,7 +229,7 @@ const Services = () => {
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Our Process
             </h2>
             <p className="text-warm-gray">
@@ -240,10 +240,10 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-serif font-semibold text-gold mb-4">
+                <div className="text-4xl font-serif font-semibold text-tan mb-4">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-semibold text-navy mb-3">
+                <h3 className="text-xl font-semibold text-sage-dark mb-3">
                   {step.title}
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed">
@@ -256,14 +256,14 @@ const Services = () => {
       </section>
 
       {/* What to Expect */}
-      <section className="py-20 md:py-28 bg-navy">
+      <section className="py-20 md:py-28 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-cream mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-lavender-light mb-6">
                 What to Expect Working With Us
               </h2>
-              <div className="space-y-6 text-cream/80">
+              <div className="space-y-6 text-lavender-light/80">
                 <p className="leading-relaxed">
                   We understand that inviting contractors into your home requires trust.
                   That's why we prioritize clear communication, respect for your space,
@@ -271,23 +271,23 @@ const Services = () => {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <CheckCircle size={18} className="text-gold flex-shrink-0 mt-1" />
+                    <CheckCircle size={18} className="text-tan flex-shrink-0 mt-1" />
                     <span>Detailed written proposals with transparent pricing</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle size={18} className="text-gold flex-shrink-0 mt-1" />
+                    <CheckCircle size={18} className="text-tan flex-shrink-0 mt-1" />
                     <span>Dedicated project manager as your single point of contact</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle size={18} className="text-gold flex-shrink-0 mt-1" />
+                    <CheckCircle size={18} className="text-tan flex-shrink-0 mt-1" />
                     <span>Daily progress updates and open communication</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle size={18} className="text-gold flex-shrink-0 mt-1" />
+                    <CheckCircle size={18} className="text-tan flex-shrink-0 mt-1" />
                     <span>Thorough protection of floors, furniture, and fixtures</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle size={18} className="text-gold flex-shrink-0 mt-1" />
+                    <CheckCircle size={18} className="text-tan flex-shrink-0 mt-1" />
                     <span>Complete cleanup at the end of each workday</span>
                   </li>
                 </ul>
@@ -307,7 +307,7 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
             Ready to Get Started?
           </h2>
           <p className="text-warm-gray max-w-2xl mx-auto mb-8">
@@ -317,14 +317,14 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center bg-navy text-cream px-8 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors"
+              className="inline-flex items-center justify-center bg-sage-dark text-lavender-light px-8 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors"
             >
               Schedule Consultation
               <ArrowRight className="ml-2" size={18} />
             </Link>
             <a
               href="tel:206-555-0123"
-              className="inline-flex items-center justify-center border-2 border-navy text-navy px-8 py-4 font-medium tracking-wide hover:bg-navy hover:text-cream transition-colors"
+              className="inline-flex items-center justify-center border-2 border-navy text-sage-dark px-8 py-4 font-medium tracking-wide hover:bg-sage-dark hover:text-lavender-light transition-colors"
             >
               Call (206) 555-0123
             </a>

@@ -7,16 +7,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: '#FAF9F6',
-        charcoal: '#2C3E50',
-        navy: '#1B2838',
-        gold: '#C9A962',
-        sage: '#87A878',
-        'warm-gray': '#6B7B8C',
+        tan: {
+          DEFAULT: '#9E9074',
+          light: '#B8AD97',
+          dark: '#7D7259',
+        },
+        lavender: {
+          DEFAULT: '#DEDAE3',
+          light: '#F5F3F7',
+        },
+        sage: {
+          DEFAULT: '#5C6B5A',
+          dark: '#3D4A3B',
+        },
+        cream: '#FAF9F7',
+        charcoal: '#2C2C2C',
+        black: '#1A1A1A',
+        'warm-gray': '#6B6B6B',
+        // Aliases for existing component classes
+        navy: '#3D4A3B',
+        gold: '#9E9074',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['Vollkorn', 'Georgia', 'serif'],
       },
     },
   },

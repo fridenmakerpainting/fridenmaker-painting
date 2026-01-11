@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle size={32} className="text-sage" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+          <h1 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
             Thank You
           </h1>
           <p className="text-warm-gray leading-relaxed mb-8">
@@ -95,7 +95,7 @@ const Contact = () => {
           </p>
           <a
             href="/"
-            className="inline-flex items-center bg-navy text-cream px-8 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors"
+            className="inline-flex items-center bg-sage-dark text-lavender-light px-8 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors"
           >
             Return Home
           </a>
@@ -107,18 +107,18 @@ const Contact = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-navy">
+      <section className="relative py-20 md:py-32 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-gold font-medium tracking-wider text-sm mb-4 uppercase">
+            <p className="text-tan font-medium tracking-wider text-sm mb-4 uppercase">
               Get In Touch
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-lavender-light leading-tight mb-6">
               Start Your
               <br />
-              <span className="text-gold">Project Today</span>
+              <span className="text-tan">Project Today</span>
             </h1>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-lavender-light/80 text-lg md:text-xl leading-relaxed">
               Ready to transform your home? Contact us for a complimentary consultation
               and detailed proposal.
             </p>
@@ -133,24 +133,24 @@ const Contact = () => {
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <info.icon size={20} className="text-gold" />
+                  <info.icon size={20} className="text-tan" />
                 </div>
                 <div>
-                  <p className="text-cream/60 text-xs uppercase tracking-wider mb-1">
+                  <p className="text-lavender-light/60 text-xs uppercase tracking-wider mb-1">
                     {info.title}
                   </p>
                   {info.link ? (
                     <a
                       href={info.link}
-                      className="text-cream hover:text-gold transition-colors"
+                      className="text-lavender-light hover:text-tan transition-colors"
                     >
                       {info.content}
                     </a>
                   ) : (
-                    <p className="text-cream">{info.content}</p>
+                    <p className="text-lavender-light">{info.content}</p>
                   )}
                   {info.subtext && (
-                    <p className="text-cream/60 text-sm mt-1">{info.subtext}</p>
+                    <p className="text-lavender-light/60 text-sm mt-1">{info.subtext}</p>
                   )}
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             {/* Form */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl md:text-3xl font-serif font-semibold text-navy mb-2">
+              <h2 className="text-2xl md:text-3xl font-serif font-semibold text-sage-dark mb-2">
                 Request a Consultation
               </h2>
               <p className="text-warm-gray mb-8">
@@ -321,7 +321,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full md:w-auto bg-navy text-cream px-12 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full md:w-auto bg-sage-dark text-lavender-light px-12 py-4 font-medium tracking-wide hover:bg-charcoal transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Sending...' : 'Submit Request'}
                 </button>
@@ -331,12 +331,12 @@ const Contact = () => {
             {/* Sidebar */}
             <div>
               <div className="bg-white border border-charcoal/10 p-8 mb-8">
-                <h3 className="text-xl font-semibold text-navy mb-4">
+                <h3 className="text-xl font-semibold text-sage-dark mb-4">
                   What Happens Next?
                 </h3>
                 <ol className="space-y-4">
                   <li className="flex gap-4">
-                    <span className="flex-shrink-0 w-8 h-8 bg-navy/10 flex items-center justify-center text-navy font-medium">
+                    <span className="flex-shrink-0 w-8 h-8 bg-sage-dark/10 flex items-center justify-center text-sage-dark font-medium">
                       1
                     </span>
                     <div>
@@ -345,7 +345,7 @@ const Contact = () => {
                     </div>
                   </li>
                   <li className="flex gap-4">
-                    <span className="flex-shrink-0 w-8 h-8 bg-navy/10 flex items-center justify-center text-navy font-medium">
+                    <span className="flex-shrink-0 w-8 h-8 bg-sage-dark/10 flex items-center justify-center text-sage-dark font-medium">
                       2
                     </span>
                     <div>
@@ -354,7 +354,7 @@ const Contact = () => {
                     </div>
                   </li>
                   <li className="flex gap-4">
-                    <span className="flex-shrink-0 w-8 h-8 bg-navy/10 flex items-center justify-center text-navy font-medium">
+                    <span className="flex-shrink-0 w-8 h-8 bg-sage-dark/10 flex items-center justify-center text-sage-dark font-medium">
                       3
                     </span>
                     <div>
@@ -365,16 +365,16 @@ const Contact = () => {
                 </ol>
               </div>
 
-              <div className="bg-navy p-8">
-                <h3 className="text-xl font-semibold text-cream mb-4">
+              <div className="bg-sage-dark p-8">
+                <h3 className="text-xl font-semibold text-lavender-light mb-4">
                   Prefer to Call?
                 </h3>
-                <p className="text-cream/70 text-sm mb-4">
+                <p className="text-lavender-light/70 text-sm mb-4">
                   Speak directly with our team during business hours.
                 </p>
                 <a
                   href="tel:206-555-0123"
-                  className="inline-flex items-center text-gold hover:text-gold/80 transition-colors"
+                  className="inline-flex items-center text-tan hover:text-tan/80 transition-colors"
                 >
                   <Phone size={18} className="mr-2" />
                   (206) 555-0123
@@ -389,7 +389,7 @@ const Contact = () => {
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-warm-gray">
@@ -400,7 +400,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-cream p-8 border border-charcoal/10">
-                <h3 className="text-lg font-semibold text-navy mb-3">
+                <h3 className="text-lg font-semibold text-sage-dark mb-3">
                   {faq.question}
                 </h3>
                 <p className="text-warm-gray leading-relaxed">

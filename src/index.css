@@ -1,14 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #FAF9F6;
-  --color-charcoal: #2C3E50;
-  --color-navy: #1B2838;
-  --color-gold: #C9A962;
-  --color-sage: #87A878;
-  --color-warm-gray: #6B7B8C;
+  /* Brand Colors from fridenmakerpainting.com */
+  --color-tan: #9E9074;
+  --color-tan-light: #B8AD97;
+  --color-tan-dark: #7D7259;
+  --color-lavender: #DEDAE3;
+  --color-lavender-light: #F5F3F7;
+  --color-sage: #5C6B5A;
+  --color-sage-dark: #3D4A3B;
+  --color-cream: #FAF9F7;
+  --color-charcoal: #2C2C2C;
+  --color-black: #1A1A1A;
+  --color-warm-gray: #6B6B6B;
+  
+  /* Legacy color aliases for components */
+  --color-navy: #3D4A3B;
+  --color-gold: #9E9074;
+  
+  /* Typography */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Vollkorn', Georgia, serif;
 }
 
 html {
@@ -20,4 +32,9 @@ body {
   color: var(--color-charcoal);
   background-color: var(--color-cream);
   margin: 0;
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
 }

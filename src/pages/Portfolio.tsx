@@ -109,18 +109,18 @@ const Portfolio = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-navy">
+      <section className="relative py-20 md:py-32 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-gold font-medium tracking-wider text-sm mb-4 uppercase">
+            <p className="text-tan font-medium tracking-wider text-sm mb-4 uppercase">
               Our Work
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-lavender-light leading-tight mb-6">
               Portfolio of
               <br />
-              <span className="text-gold">Excellence</span>
+              <span className="text-tan">Excellence</span>
             </h1>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-lavender-light/80 text-lg md:text-xl leading-relaxed">
               Explore our recent projects and see the quality that has made us
               the trusted choice for Seattle's finest homes.
             </p>
@@ -138,8 +138,8 @@ const Portfolio = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-2 text-sm font-medium tracking-wide transition-colors ${
                   selectedCategory === category
-                    ? 'bg-navy text-cream'
-                    : 'bg-white text-warm-gray hover:text-navy border border-charcoal/20'
+                    ? 'bg-sage-dark text-lavender-light'
+                    : 'bg-white text-warm-gray hover:text-sage-dark border border-charcoal/20'
                 }`}
               >
                 {category}
@@ -165,18 +165,18 @@ const Portfolio = () => {
                     alt={project.title}
                     className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/40 transition-all duration-300 flex items-center justify-center">
-                    <span className="text-cream font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-sage-dark/0 group-hover:bg-sage-dark/40 transition-all duration-300 flex items-center justify-center">
+                    <span className="text-lavender-light font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       View Project
                     </span>
                   </div>
                   <div className="absolute top-4 left-4">
-                    <span className="bg-cream/90 text-navy px-3 py-1 text-xs font-medium tracking-wide">
+                    <span className="bg-cream/90 text-sage-dark px-3 py-1 text-xs font-medium tracking-wide">
                       {project.category}
                     </span>
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-navy mb-1">
+                <h3 className="text-xl font-semibold text-sage-dark mb-1">
                   {project.title}
                 </h3>
                 <p className="text-warm-gray text-sm">{project.location}</p>
@@ -189,7 +189,7 @@ const Portfolio = () => {
       {/* Project Modal */}
       {selectedProject && (
         <div
-          className="fixed inset-0 bg-navy/80 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 bg-sage-dark/80 z-50 flex items-center justify-center p-4"
           onClick={() => setSelectedProject(null)}
         >
           <div
@@ -212,12 +212,12 @@ const Portfolio = () => {
             </div>
             <div className="p-8">
               <div className="flex items-center gap-3 mb-2">
-                <span className="bg-navy/10 text-navy px-3 py-1 text-xs font-medium tracking-wide">
+                <span className="bg-sage-dark/10 text-sage-dark px-3 py-1 text-xs font-medium tracking-wide">
                   {selectedProject.category}
                 </span>
                 <span className="text-warm-gray text-sm">{selectedProject.location}</span>
               </div>
-              <h2 className="text-2xl md:text-3xl font-serif font-semibold text-navy mb-4">
+              <h2 className="text-2xl md:text-3xl font-serif font-semibold text-sage-dark mb-4">
                 {selectedProject.title}
               </h2>
               <p className="text-warm-gray leading-relaxed mb-6">
@@ -235,7 +235,7 @@ const Portfolio = () => {
               </div>
               <Link
                 to="/contact"
-                className="inline-flex items-center bg-navy text-cream px-6 py-3 font-medium tracking-wide hover:bg-charcoal transition-colors"
+                className="inline-flex items-center bg-sage-dark text-lavender-light px-6 py-3 font-medium tracking-wide hover:bg-charcoal transition-colors"
                 onClick={() => setSelectedProject(null)}
               >
                 Start Your Project
@@ -247,17 +247,17 @@ const Portfolio = () => {
       )}
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-navy">
+      <section className="py-20 md:py-28 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-cream mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-lavender-light mb-4">
             Ready to See Your Home Here?
           </h2>
-          <p className="text-cream/70 max-w-2xl mx-auto mb-8">
+          <p className="text-lavender-light/70 max-w-2xl mx-auto mb-8">
             Let's discuss your project and create something beautiful together.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center bg-gold text-navy px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
+            className="inline-flex items-center justify-center bg-gold text-sage-dark px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
           >
             Schedule Consultation
             <ArrowRight className="ml-2" size={18} />

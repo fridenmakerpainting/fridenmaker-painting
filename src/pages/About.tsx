@@ -58,18 +58,18 @@ const About = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 bg-navy">
+      <section className="relative py-20 md:py-32 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-3xl">
-            <p className="text-gold font-medium tracking-wider text-sm mb-4 uppercase">
+            <p className="text-tan font-medium tracking-wider text-sm mb-4 uppercase">
               Our Story
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-lavender-light leading-tight mb-6">
               Four Generations of
               <br />
-              <span className="text-gold">Exceptional Craft</span>
+              <span className="text-tan">Exceptional Craft</span>
             </h1>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed">
+            <p className="text-lavender-light/80 text-lg md:text-xl leading-relaxed">
               Since 1952, the Fridenmaker family has dedicated ourselves to a singular pursuit:
               bringing artistry and precision to every surface we touch.
             </p>
@@ -83,10 +83,10 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-3xl md:text-4xl font-serif font-semibold text-gold mb-1">
+                <p className="text-3xl md:text-4xl font-serif font-semibold text-tan mb-1">
                   {stat.number}
                 </p>
-                <p className="text-cream/70 text-sm">{stat.label}</p>
+                <p className="text-lavender-light/70 text-sm">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -98,7 +98,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-6">
                 A Legacy Built on Excellence
               </h2>
               <div className="space-y-4 text-warm-gray leading-relaxed">
@@ -130,9 +130,9 @@ const About = () => {
                 alt="Craftsman at work"
                 className="w-full h-[500px] object-cover"
               />
-              <div className="absolute -bottom-8 -left-8 bg-navy p-6 hidden md:block">
-                <p className="text-gold font-serif text-2xl font-semibold">Est. 1952</p>
-                <p className="text-cream/70 text-sm">Seattle, Washington</p>
+              <div className="absolute -bottom-8 -left-8 bg-sage-dark p-6 hidden md:block">
+                <p className="text-tan font-serif text-2xl font-semibold">Est. 1952</p>
+                <p className="text-lavender-light/70 text-sm">Seattle, Washington</p>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ const About = () => {
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Our Journey
             </h2>
             <p className="text-warm-gray">
@@ -165,10 +165,10 @@ const About = () => {
                 >
                   <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                     <div className="bg-cream p-8 border border-charcoal/10">
-                      <p className="text-gold font-serif text-2xl font-semibold mb-2">
+                      <p className="text-tan font-serif text-2xl font-semibold mb-2">
                         {item.year}
                       </p>
-                      <h3 className="text-xl font-semibold text-navy mb-3">
+                      <h3 className="text-xl font-semibold text-sage-dark mb-3">
                         {item.title}
                       </h3>
                       <p className="text-warm-gray leading-relaxed">
@@ -189,7 +189,7 @@ const About = () => {
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Our Values
             </h2>
             <p className="text-warm-gray">
@@ -204,12 +204,12 @@ const About = () => {
                 className="bg-white p-8 border border-charcoal/10 flex gap-6"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-navy/5 flex items-center justify-center">
-                    <value.icon className="text-gold" size={24} />
+                  <div className="w-12 h-12 bg-sage-dark/5 flex items-center justify-center">
+                    <value.icon className="text-tan" size={24} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-navy mb-2">
+                  <h3 className="text-xl font-semibold text-sage-dark mb-2">
                     {value.title}
                   </h3>
                   <p className="text-warm-gray leading-relaxed">
@@ -234,7 +234,7 @@ const About = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-6">
                 Our Team
               </h2>
               <div className="space-y-4 text-warm-gray leading-relaxed">
@@ -260,17 +260,17 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-navy">
+      <section className="py-20 md:py-28 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-cream mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-lavender-light mb-4">
             Experience the Fridenmaker Difference
           </h2>
-          <p className="text-cream/70 max-w-2xl mx-auto mb-8">
+          <p className="text-lavender-light/70 max-w-2xl mx-auto mb-8">
             Let's discuss how our four generations of expertise can bring your vision to life.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center bg-gold text-navy px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
+            className="inline-flex items-center justify-center bg-gold text-sage-dark px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
           >
             Start Your Project
             <ArrowRight className="ml-2" size={18} />

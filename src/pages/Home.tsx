@@ -79,29 +79,29 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-20">
           <div className="max-w-2xl">
-            <p className="text-gold font-medium tracking-wider text-sm mb-4 uppercase">
+            <p className="text-tan font-medium tracking-wider text-sm mb-4 uppercase">
               Fourth Generation Excellence
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-cream leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-lavender-light leading-tight mb-6">
               Seattle's Premier
               <br />
-              <span className="text-gold">Residential Painters</span>
+              <span className="text-tan">Residential Painters</span>
             </h1>
-            <p className="text-cream/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
+            <p className="text-lavender-light/80 text-lg md:text-xl leading-relaxed mb-8 max-w-xl">
               For over 70 years, Seattle's most discerning homeowners have trusted our family
               to protect and beautify their investments with uncompromising craftsmanship.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center bg-gold text-navy px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
+                className="inline-flex items-center justify-center bg-gold text-sage-dark px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
               >
                 Schedule Consultation
                 <ArrowRight className="ml-2" size={18} />
               </Link>
               <Link
                 to="/portfolio"
-                className="inline-flex items-center justify-center border-2 border-cream/30 text-cream px-8 py-4 font-medium tracking-wide hover:bg-cream/10 transition-colors"
+                className="inline-flex items-center justify-center border-2 border-cream/30 text-lavender-light px-8 py-4 font-medium tracking-wide hover:bg-cream/10 transition-colors"
               >
                 View Our Work
               </Link>
@@ -111,23 +111,23 @@ const Home = () => {
       </section>
 
       {/* Trust Indicators */}
-      <section className="bg-navy py-6">
+      <section className="bg-sage-dark py-6">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-cream/70 text-sm">
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-lavender-light/70 text-sm">
             <div className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-gold" />
+              <CheckCircle size={16} className="text-tan" />
               <span>Licensed & Insured</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-gold" />
+              <CheckCircle size={16} className="text-tan" />
               <span>5-Year Warranty</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-gold" />
+              <CheckCircle size={16} className="text-tan" />
               <span>Free Estimates</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle size={16} className="text-gold" />
+              <CheckCircle size={16} className="text-tan" />
               <span>Eco-Friendly Options</span>
             </div>
           </div>
@@ -138,7 +138,7 @@ const Home = () => {
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Why Seattle's Finest Choose Fridenmaker
             </h2>
             <p className="text-warm-gray">
@@ -153,8 +153,8 @@ const Home = () => {
                 key={index}
                 className="bg-white p-8 border border-charcoal/10 hover:border-gold/50 transition-colors"
               >
-                <feature.icon className="text-gold mb-4" size={32} />
-                <h3 className="text-lg font-semibold text-navy mb-2">
+                <feature.icon className="text-tan mb-4" size={32} />
+                <h3 className="text-lg font-semibold text-sage-dark mb-2">
                   {feature.title}
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed">
@@ -171,7 +171,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
             <div>
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
                 Our Services
               </h2>
               <p className="text-warm-gray max-w-xl">
@@ -181,7 +181,7 @@ const Home = () => {
             </div>
             <Link
               to="/services"
-              className="mt-4 md:mt-0 inline-flex items-center text-navy font-medium hover:text-gold transition-colors"
+              className="mt-4 md:mt-0 inline-flex items-center text-sage-dark font-medium hover:text-tan transition-colors"
             >
               View All Services
               <ArrowRight className="ml-2" size={18} />
@@ -197,9 +197,9 @@ const Home = () => {
                     alt={service.title}
                     className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-navy/0 group-hover:bg-navy/20 transition-colors duration-300" />
+                  <div className="absolute inset-0 bg-sage-dark/0 group-hover:bg-sage-dark/20 transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-semibold text-navy mb-2">
+                <h3 className="text-xl font-semibold text-sage-dark mb-2">
                   {service.title}
                 </h3>
                 <p className="text-warm-gray text-sm leading-relaxed">
@@ -215,7 +215,7 @@ const Home = () => {
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-semibold text-sage-dark mb-4">
               Trusted by Homeowners & Professionals
             </h2>
             <p className="text-warm-gray">
@@ -235,7 +235,7 @@ const Home = () => {
                     <Star
                       key={i}
                       size={16}
-                      className="text-gold fill-gold"
+                      className="text-tan fill-tan"
                     />
                   ))}
                 </div>
@@ -243,7 +243,7 @@ const Home = () => {
                   "{testimonial.quote}"
                 </blockquote>
                 <div>
-                  <p className="font-medium text-navy">{testimonial.author}</p>
+                  <p className="font-medium text-sage-dark">{testimonial.author}</p>
                   <p className="text-warm-gray text-sm">{testimonial.location}</p>
                 </div>
               </div>
@@ -253,26 +253,26 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-navy">
+      <section className="py-20 md:py-28 bg-sage-dark">
         <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-cream mb-4">
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold text-lavender-light mb-4">
             Ready to Transform Your Home?
           </h2>
-          <p className="text-cream/70 max-w-2xl mx-auto mb-8">
+          <p className="text-lavender-light/70 max-w-2xl mx-auto mb-8">
             Schedule a consultation with our team to discuss your vision.
             We'll provide a detailed proposal and transparent timeline for your project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center bg-gold text-navy px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
+              className="inline-flex items-center justify-center bg-gold text-sage-dark px-8 py-4 font-medium tracking-wide hover:bg-gold/90 transition-colors"
             >
               Request Free Estimate
               <ArrowRight className="ml-2" size={18} />
             </Link>
             <a
               href="tel:206-555-0123"
-              className="inline-flex items-center justify-center border-2 border-cream/30 text-cream px-8 py-4 font-medium tracking-wide hover:bg-cream/10 transition-colors"
+              className="inline-flex items-center justify-center border-2 border-cream/30 text-lavender-light px-8 py-4 font-medium tracking-wide hover:bg-cream/10 transition-colors"
             >
               Call (206) 555-0123
             </a>
