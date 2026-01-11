@@ -12,12 +12,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <h3 className="text-2xl font-serif font-semibold tracking-tight">
-                Fridenmaker
-              </h3>
-              <p className="text-xs tracking-[0.25em] text-lavender-light/60 uppercase">
-                Painting Co.
-              </p>
+              <img
+                src="/images/logo-dark.svg"
+                alt="Fridenmaker Painting"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-lavender-light/70 text-sm leading-relaxed mb-6">
               Four generations of exceptional craftsmanship, serving Seattle's finest homes since 1952.
